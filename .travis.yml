@@ -13,4 +13,4 @@ install:
   - pip install -r dev-requirements.txt
 
 script:
-  - "PYTHONPATH=. py.test --cov=basic_calculator tests"
+  - "PYTHONPATH=. py.test --cov=list_of_prime_numbers tests"
