@@ -7,3 +7,6 @@ def _is_prime(number):
 
 def list_of_prime_numbers(max_number):
     pass
+
+if __name__ == '__main__':
+    print(_is_prime(19))
