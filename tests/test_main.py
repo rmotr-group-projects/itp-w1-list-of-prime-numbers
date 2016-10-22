@@ -1,10 +1,10 @@
 import unittest
 
-from list_of_prime_numbers import list_of_prime_numbers, _is_prime
+from list_of_prime_numbers import list_of_prime_numbers
+from list_of_prime_numbers.main import _is_prime
 
 
 class TestIsPrime(unittest.TestCase):
-
     def test_big_number_prime_true(self):
         self.assertEqual(_is_prime(19), True)
 
@@ -21,13 +21,14 @@ class TestIsPrime(unittest.TestCase):
         self.assertEqual(_is_prime(3), True)
 
     def test_four_prime(self):
-        self.assertEqual(_is_prime(4), False)    
+        self.assertEqual(_is_prime(4), False)
 
 
 class TestListOfPrimeNumbers(unittest.TestCase):
-
     def test_big_number_list(self):
-        self.assertEqual(list_of_prime_numbers(19), [1,2,3,5,7,11,13,17,19])
+        self.assertEqual(
+            list_of_prime_numbers(19),
+            [1, 2, 3, 5, 7, 11, 13, 17, 19])
 
     def test_list_one(self):
         self.assertEqual(list_of_prime_numbers(1), [1])
