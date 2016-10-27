@@ -3,17 +3,11 @@ def _is_prime(number):
         return False
         
     else:
-	
         is_prime = True
-    	for i in range(2, number):
+        for i in range(2, number):
             if number % i == 0:
                 is_prime = False
-
     return is_prime
-
-
-
-
 
 def list_of_prime_numbers(max_number):
     prime_numbers = []
