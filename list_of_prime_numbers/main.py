@@ -5,6 +5,9 @@ from math import sqrt
 
 def _is_prime(number):
     # 1 is not a prime number, so start with 2
+    if number < 2:
+        return False
+    
     i = 2
     while i <= sqrt(number):
         # if the number is divisible by any number lower than its sqrt, not a prime
