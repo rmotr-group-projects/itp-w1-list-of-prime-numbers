@@ -11,7 +11,7 @@ def _is_prime(x):
 
 def list_of_prime_numbers(x):
     a=[]
-    for i in range(1,x+1):
+    for i in range(2,x+1):
         if _is_prime(i):
             a.append(i)
     return a
