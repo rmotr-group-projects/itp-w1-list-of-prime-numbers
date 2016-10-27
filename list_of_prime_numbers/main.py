@@ -20,7 +20,7 @@ def list_of_prime_numbers(max_number):
     if max_number == 0:
         return prime_numbers
     elif max_number == 1:
-        return 'insert a number greater than 1'
+        return prime_numbers
    
     for i in range(1, max_number + 1):
         if _is_prime(i):

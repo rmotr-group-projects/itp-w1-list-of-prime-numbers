@@ -32,7 +32,7 @@ class TestListOfPrimeNumbers(unittest.TestCase):
             [2, 3, 5, 7, 11, 13, 17, 19])
 
     def test_list_one(self):
-        self.assertEqual(list_of_prime_numbers(1), 'insert a number greater than 1')
+        self.assertEqual(list_of_prime_numbers(1), [])
 
     def test_list_zero(self):
         self.assertEqual(list_of_prime_numbers(0), [])
