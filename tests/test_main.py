@@ -36,3 +36,6 @@ class TestListOfPrimeNumbers(unittest.TestCase):
 
     def test_list_zero(self):
         self.assertEqual(list_of_prime_numbers(0), [])
+
+if __name__ == '__main__':
+    print(_is_prime(19))

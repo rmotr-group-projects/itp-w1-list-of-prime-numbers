@@ -9,6 +9,9 @@ def _is_prime(number):
                 is_prime = False
     return is_prime
 
+
+
+
 def list_of_prime_numbers(max_number):
     prime_numbers = []
     if max_number == 0:
@@ -25,4 +28,3 @@ def list_of_prime_numbers(max_number):
 if __name__ == '__main__':
     print(_is_prime(19))
 
-print _is_prime(20)
