@@ -2,7 +2,8 @@
 
 
 def _is_prime(number):
-    # import ipdb; ipdb.set_trace()
+    if number == 1:
+        return False
     for n in range((number - 1), 1, -1):
         if number % n == 0:
             return False
