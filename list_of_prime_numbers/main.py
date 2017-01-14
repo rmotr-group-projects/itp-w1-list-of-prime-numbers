@@ -1,5 +1,7 @@
 def _is_prime(number):
-    if number == 2 or number == 3 or number == 1:
+    if number == 1:
+        return False
+    elif number == 2 or number == 3:
         return True
     elif number % 2 == 0 or number % 3 == 0:
         return False
@@ -9,7 +11,7 @@ def _is_prime(number):
 
 def list_of_prime_numbers(max_number):
     list = []
-    counter = 1
+    counter = 2
     while counter <= max_number:
         if _is_prime(counter):
             list.append(counter)
