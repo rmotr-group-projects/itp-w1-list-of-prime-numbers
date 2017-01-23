@@ -15,7 +15,7 @@ def _is_prime(number):
 
 def list_of_prime_numbers(max_number):
     oddNumber = range(3, max_number + 1, 2)
-    numbers = set(sum([range(i * i, max_number, i + i) for i in oddNumber], []))
+    numbers = set(sum([range(i * i, max_number + 1, i + i) for i in oddNumber], []))
     if max_number > 1:
         return [2] + [j for j in oddNumber if j not in numbers]
     else:
