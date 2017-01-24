@@ -14,12 +14,11 @@ def _is_prime(number):
 
 
 def list_of_prime_numbers(max_number):
-    oddNumber = range(3, max_number + 1, 2)
-    numbers = set(sum([range(i * i, max_number + 1, i + i) for i in oddNumber], []))
-    if max_number > 1:
-        return [2] + [j for j in oddNumber if j not in numbers]
-    else:
-        return [j for j in oddNumber if j not in numbers]
+    prime = []
+    for i in range(max_number + 1):
+        if _is_prime(i):
+            prime.append(i)
+    return prime
 
 if __name__ == '__main__':
     print(_is_prime(19))
